@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aathira Mart - Inventory</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7f6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1b5e20, #43a047);
+            color: white;
+            padding: 22px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .back {
+            background: white;
+            color: #2e7d32;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .inventory-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #2e7d32;
+            color: white;
+            padding: 14px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .stock {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .low-stock {
+            color: #d97706;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>🛒 AATHIRA MART</h1>
+
+        <a href="/dashboard" class="back">
+            Dashboard
+        </a>
+
+    </div>
+
+    <div class="container">
+
+        <h2>📦 Inventory</h2>
+
+        <div class="inventory-box">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Available Stock</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>P001</td>
+                        <td>Fresh Vegetables</td>
+                        <td>₹120</td>
+                        <td>50</td>
+                        <td class="stock">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>P002</td>
+                        <td>Fresh Milk</td>
+                        <td>₹60</td>
+                        <td>30</td>
+                        <td class="stock">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>P003</td>
+                        <td>Snacks</td>
+                        <td>₹80</td>
+                        <td>20</td>
+                        <td class="stock">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>P004</td>
+                        <td>Personal Care</td>
+                        <td>₹150</td>
+                        <td>8</td>
+                        <td class="low-stock">Low Stock</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

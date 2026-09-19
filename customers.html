@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aathira Mart - Customers</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7f6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1b5e20, #43a047);
+            color: white;
+            padding: 22px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .back {
+            background: white;
+            color: #2e7d32;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .customer-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #2e7d32;
+            color: white;
+            padding: 14px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .active {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>🛒 AATHIRA MART</h1>
+
+        <a href="/dashboard" class="back">
+            Dashboard
+        </a>
+
+    </div>
+
+    <div class="container">
+
+        <h2>👥 Customers</h2>
+
+        <div class="customer-box">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Customer ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>C001</td>
+                        <td>Aathira</td>
+                        <td>9876543210</td>
+                        <td>aathira@example.com</td>
+                        <td class="active">Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>C002</td>
+                        <td>Arun</td>
+                        <td>9876543211</td>
+                        <td>arun@example.com</td>
+                        <td class="active">Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>C003</td>
+                        <td>Priya</td>
+                        <td>9876543212</td>
+                        <td>priya@example.com</td>
+                        <td class="active">Active</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
