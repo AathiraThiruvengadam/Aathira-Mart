@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aathira Mart - Login</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f7f7f7, #e8f5e9);
+        }
+
+        .container {
+            width: 900px;
+            min-height: 550px;
+            display: flex;
+            background: white;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .brand-section {
+            width: 50%;
+            background: linear-gradient(135deg, #1b5e20, #43a047);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .brand-section h1 {
+            font-size: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .brand-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .shopping-icon {
+            font-size: 75px;
+            margin-bottom: 20px;
+        }
+
+        .login-section {
+            width: 50%;
+            padding: 60px 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .login-section h2 {
+            font-size: 32px;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .login-section .welcome {
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+
+        .input-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .input-box input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .input-box input:focus {
+            border-color: #43a047;
+            box-shadow: 0 0 5px rgba(67, 160, 71, 0.25);
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: #2e7d32;
+            color: white;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .login-btn:hover {
+            background: #1b5e20;
+        }
+
+        .register {
+            text-align: center;
+            margin-top: 25px;
+            color: #777;
+        }
+
+        .register a {
+            color: #2e7d32;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: 90%;
+                flex-direction: column;
+            }
+
+            .brand-section,
+            .login-section {
+                width: 100%;
+            }
+
+            .brand-section {
+                min-height: 250px;
+            }
+
+            .brand-section h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="brand-section">
+        <div class="shopping-icon">🛒</div>
+
+        <h1>AATHIRA MART</h1>
+
+        <p>
+            Everything you need,<br>
+            all in one place.
+        </p>
+    </div>
+
+    <div class="login-section">
+
+        <h2>Welcome Back!</h2>
+
+        <p class="welcome">
+            Login to continue shopping with Aathira Mart.
+        </p>
+
+        <form action="/login" method="post">
+
+            <div class="input-box">
+                <label>User ID</label>
+                <input
+                    type="text"
+                    name="userId"
+                    placeholder="Enter your User ID"
+                    required>
+            </div>
+
+            <div class="input-box">
+                <label>Password</label>
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="Enter your Password"
+                    required>
+            </div>
+
+            <button type="submit" class="login-btn">
+                Login
+            </button>
+
+        </form>
+
+        <div class="register">
+            New to Aathira Mart?
+            <a href="/register">Create an Account</a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

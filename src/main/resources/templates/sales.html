@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aathira Mart - Sales</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7f6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1b5e20, #43a047);
+            color: white;
+            padding: 22px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+        }
+
+        .back {
+            background: white;
+            color: #2e7d32;
+            padding: 10px 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        h2 {
+            margin-bottom: 25px;
+            color: #222;
+        }
+
+        .sales-box {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #2e7d32;
+            color: white;
+            padding: 14px;
+            text-align: left;
+        }
+
+        td {
+            padding: 14px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .amount {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .status {
+            color: #2e7d32;
+            font-weight: bold;
+        }
+
+        .total {
+            margin-top: 25px;
+            text-align: right;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>🛒 AATHIRA MART</h1>
+
+        <a href="/dashboard" class="back">
+            Dashboard
+        </a>
+
+    </div>
+
+    <div class="container">
+
+        <h2>📊 Sales</h2>
+
+        <div class="sales-box">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Product</th>
+                        <th>Customer</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#AM001</td>
+                        <td>Fresh Vegetables</td>
+                        <td>Customer</td>
+                        <td class="amount">₹120</td>
+                        <td class="status">Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>#AM002</td>
+                        <td>Fresh Milk</td>
+                        <td>Customer</td>
+                        <td class="amount">₹60</td>
+                        <td class="status">Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>#AM003</td>
+                        <td>Snacks</td>
+                        <td>Customer</td>
+                        <td class="amount">₹80</td>
+                        <td class="status">Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>#AM004</td>
+                        <td>Personal Care</td>
+                        <td>Customer</td>
+                        <td class="amount">₹150</td>
+                        <td class="status">Completed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+            <div class="total">
+                Total Sales: ₹410
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
